@@ -13,33 +13,35 @@ import thumbsup from "../assets/images/thumbsup.png";
 	<Button variant="secondary" size="small">Knaptekst</Button>	
 
 	
-<form class="">
-	<div class="">
+<form class="flex flex-col border-2 border-black rounded-lg max-w-md">
+	<div class="p-4">
 		<label for="antal">Antal:</label>
 		<input type="number" id="antal" placeholder="1">
+	</div>
 
-	</div>
-	<div class="">
+	<div class="p-4">
 		<span>Levering:</span>
-		<div> <label for="postnord" area-checked="checked">Postnord</label> <input type="radio" id="postnord" name="levering"> <div> <label for="afhent">Afhent selv</label> <input type="radio" id="afhent" name="levering"> </div></div>
-		<div>
-		<span>Navn:</span>
-		<input type="text" id="navn" placeholder="Navn">
+		<label for="postnord" area-checked="checked">Postnord</label> <input type="radio" id="postnord" name="levering">
+	    <label for="afhent">Afhent selv</label> <input type="radio" id="afhent" name="levering">
+		
 	</div>
-	<div>
+	<div class="p-4">
+		<span>Navn:</span>
+		<input type="text" id="navn" class="" placeholder="Navn">
+	</div>
+	<div class="p-4">
 		<span>Adresse:</span>
 		<input type="text" id="adresse" placeholder="Adresse">
 	</div>
+	<div class="p-4">
 	<span>Email:</span>
 	<input type="text" id="email" placeholder="Email">
+</div>
+		
 	
-	<div>
-		
-		<div>
-		
-	</div>
-	<input type="button" onclick="alert('Tak for din bestilling!')" value="Bestil">
-
+	<Button variant="primary" size="large">Knaptekst</Button>
 </form>
+
+
 
 </MainLayout>
